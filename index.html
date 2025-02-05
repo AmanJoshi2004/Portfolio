@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Aman Joshi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Aman Joshi">Aman Joshi</h1>
+
+          <p class="title">Intern at SAC, ISRO</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:amanjoshi779@gmail.com" class="contact-link">amanjoshi779@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 9913077637" class="contact-link">+91 9913077637</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-01-30">January 30, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ahmedabad, Gujarat, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/aman-joshi-366b33202/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/AmanJoshi2004?tab=repositories" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a passionate engineer who loves using technology to solve real-world problems. My skills include computer vision, embedded systems, and hardware design, and I enjoy turning complex ideas into practical solutions. I’m always eager to learn and take on new challenges that push me to grow.
+          </p>
+
+          <p>
+            I believe in the power of innovation and teamwork to create meaningful impact. Whether it’s designing systems or improving efficiency, I focus on delivering results that matter. Let’s connect and build something amazing together!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Hardware Design & Simulation</h4>
+
+                <p class="service-item-text">
+                  I specialize in designing and simulating hardware components, including antennas and CPUs. Using tools like Logisim, Ansys HFSS, ADS.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Embedded Systems Development</h4>
+
+                <p class="service-item-text">
+                  I develop optimized embedded systems using Embedded C and microcontroller programming. My work focuses on improving performance and efficiency, such as enhancing vehicle operations and reducing power consumption.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Innovation & Problem-Solving
+                </h4>
+
+                <p class="service-item-text">
+                  I thrive on tackling complex challenges and turning ideas into reality. Whether it’s improving system efficiency or designing user-friendly interfaces, I bring creativity and technical expertise to every project.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Vision Solutions</h4>
+
+                <p class="service-item-text">
+                  I design and implement advanced computer vision models to solve real-world problems. I leverage tools like YOLOv8 to create accurate and efficient systems.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+           
+
+          </section>
+
+        </div>
+
+
+        
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Pandit Deendayal Energy University, Gandhinagar, Gujarat</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                B. Tech in Information and Communication Technology (9.25 CGPA)
+              </p>
+
+            </li>
+
+        
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Intern</h4>
+              <span>SAC, ISRO</span>
+              <span>Dec 2024 — Present</span>
+
+              <p class="timeline-text">
+              
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Intern</h4>
+              <span>National Institute of Technology, Rourkela</span>
+              <span>May 2024 — July 2024</span>
+
+              <p class="timeline-text">
+                Research Internship with NIT Rourkela Faculty in Enhanced Isolation 4*4 MIMO Antennas on Cross-Substrate for 6G Applications.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior Team Member</h4>
+              <span>Kaizen, PDEU</span>
+              <span>July 2022 — Nov 2024</span>
+
+              <p class="timeline-text">
+                I am a Senior Team Member at Team Kaizen, the prestigious team from PDEU that participates in the Shell Eco-marathon organized by Shell. At Team Kaizen, we have built a hyper-efficient battery-electric prototype vehicle achieving an impressive efficiency of over 320 km/kWh.
+              </p>
+              <p class="timeline-text">
+
+My primary role involves embedded coding. I develop code to process inputs from the throttle, manage the motor controller, and regulate the motor's speed. Additionally, I work in Embedded C using the HAL library, and I have also designed a tachometer to measure the vehicle's speed utilizing various sensors.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Volunteering</h4>
+              <span>Maa Foundation, Vapi</span>
+              <span>Jun 2022 — July 2022</span>
+
+              <p class="timeline-text">
+                The Common and Social Service Internship (CSSI) has been instrumental in instilling core values and understanding the significance of giving back to society. During this internship, I taught students for a week, developed plans, and provided ideas and feedback on current initiatives. Additionally, I observed the impactful work of the Maa Foundation in supporting students and their parents through innovative educational programs, fostering high values, and guiding students in planning their futures.              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Data Visualization</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Computer Vision</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Embedded Systems</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Antenna design</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Embedded C</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Advanced Design System</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Matlab</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Logisim</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">keil uVision</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">NI Multisim</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Ansys HFSS</h5>
+              </div>
+              <div class="title-wrapper">
+                <h5 class="h5">Logisim</h5>
+              </div>
+            </li>
+          </ul>
+
+            <h3 class="h3 skills-title">Certificates</h3>
+
+            <ul class="skills-list content-card">
+  
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Letter of Appreciation from Kaizen, PDEU</h4>
+              <span style="color: yellow;">Dr. Jatin Patel and Dr. Jitendra Jamnani</span>
+              <span style="color: yellow;">Dec 2024</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Certificate of Internship at NIT Rourkela</h4>
+              <span style="color: yellow;">Dr. Jogesh Dash</span>
+              <span style="color: yellow;">May 2024 – July 2024</span>
+            </li>
+              <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">NPTEL- Understanding Incubation and Entrepreneurship</h4>
+              <span style="color: yellow;"> Prof. Sridhar Iyer</span>
+              <span style="color: yellow;">Jan 2024 – Apr 2024</span>
+            </li>
+              <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Certificate of Training from MAA Foundation</h4>
+              <span style="color: yellow;"> Viraj D. Shukla</span>
+              <span style="color: yellow;">Jan 2023</span>
+              </li>
+  
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Projects</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Projects</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Computer Vision</h3>
+
+                <p class="project-category">PCB DEFECT DETECTION BASED ON ENVIRONMENTAL PARAMETERS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Antenna Design</h3>
+
+                <p class="project-category">Design a MIMO Antenna for improve isolation of a MIMO antenna for 6G application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">16-bit CPU</h3>
+
+                <p class="project-category">Development of a 16-bit CPU with Instruction Set Implementation Using Logisim.</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" >
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.JPG" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Embedded Systems</h3>
+
+                <p class="project-category">Efficient Motor Control System Using STM32</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IoT</h3>
+
+                <p class="project-category">Automated Trolley System Using Raspberry Pi and RFID Reader  </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Big Data Analytics</h3>
+
+                <p class="project-category">Demand Forecasting for Inventory Management </p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="http://127.0.0.1:5000/submit-form" method="POST" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+          
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
