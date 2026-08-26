@@ -1,0 +1,9 @@
+{
+  "name": "aman-joshi-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aman Bhaumik Joshi's portfolio site with an AI recruiter chatbot backend.",
+  "engines": {
+    "node": ">=18"
+  }
+}
